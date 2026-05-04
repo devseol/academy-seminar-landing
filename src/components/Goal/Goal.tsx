@@ -2,6 +2,8 @@
  * 강연 목표 섹션. 차트 인포그래픽 + 3가지 인사이트.
  */
 export function Goal() {
+  const chartImageUrl = 'assets/chart.svg';
+
   return (
     <section className="sec" style={{ background: 'var(--dark)' }}>
       <div className="si">
@@ -16,7 +18,7 @@ export function Goal() {
           <div className="chart-sl">AI 혁명과 교육 양극화 지도</div>
           <div className="chart-img-wrap">
             <img
-              src="/assets/chart.svg"
+              src={chartImageUrl}
               alt="AI 혁명과 교육 양극화 지도"
               className="chart-img-resp"
             />

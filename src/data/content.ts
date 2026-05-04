@@ -5,6 +5,8 @@
 
 import type { EventInfo, Speaker, TimetableItem } from '../types';
 
+const speakerImageUrl = (fileName: string) => `assets/${fileName}`;
+
 export const EVENT: EventInfo = {
   date: '2026년 6월 2일 (화) 10시',
   venue: '강남 교보타워 23층 드림홀',
@@ -16,7 +18,7 @@ export const SPEAKERS: Speaker[] = [
     key: 'lee',
     name: '이정모',
     role: '전 국립과학관 관장 / 과학 커뮤니케이터',
-    img: '/assets/speaker-lee.png',
+    img: speakerImageUrl('speaker-lee.png'),
     link: 'https://youtu.be/-4p-7dTLdK8?si=zz_-QzEm-FWiIYQj',
     linkLabel: '털보관장 이정모, 이런분입니다',
     bullets: [
@@ -30,7 +32,7 @@ export const SPEAKERS: Speaker[] = [
     key: 'kimsy',
     name: '김성윤',
     role: '아이포트폴리오 대표 / 리딩앤 창업자',
-    img: '/assets/speaker-kimsy.png',
+    img: speakerImageUrl('speaker-kimsy.png'),
     link: 'https://youtu.be/0kCjxhLea-E?si=dq2KeqCxoC--icd4',
     linkLabel: '대치동 내부고발자 출연 영상',
     bullets: [
@@ -45,7 +47,7 @@ export const SPEAKERS: Speaker[] = [
     key: 'kimhs',
     name: '김형석',
     role: '작곡가, 프로듀서 / 옥스퍼드대 방문 연구원',
-    img: '/assets/speaker-kimhs.png',
+    img: speakerImageUrl('speaker-kimhs.png'),
     link: 'https://youtu.be/X8FpcP2qrxI?si=GnIDXK2LKumTJ6Qb',
     linkLabel: '김형석, 이런 분입니다',
     bullets: [

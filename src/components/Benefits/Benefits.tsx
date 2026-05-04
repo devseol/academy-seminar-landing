@@ -14,6 +14,8 @@ const BG_IMG_STYLE: CSSProperties = {
  * 참가 혜택 + 현장 추첨 prize 섹션.
  */
 export function Benefits() {
+  const assetUrl = (fileName: string) => `assets/${fileName}`;
+
   return (
     <section className="sec" style={{ background: 'var(--dark)' }}>
       <div className="si">
@@ -30,7 +32,7 @@ export function Benefits() {
         <div className="ben-grid">
           <div className="ben-c sr">
             <img
-              src="/assets/benefit-hall.png"
+              src={assetUrl('benefit-hall.png')}
               alt="강연 요약집"
               style={{ ...BG_IMG_STYLE, opacity: 0.38 }}
             />
@@ -48,7 +50,7 @@ export function Benefits() {
           </div>
           <div className="ben-c sr d1">
             <img
-              src="/assets/benefit-kagwadong.png"
+              src={assetUrl('benefit-kagwadong.png')}
               alt="어린이 과학동아"
               style={BG_IMG_STYLE}
             />
@@ -72,7 +74,7 @@ export function Benefits() {
             <div className="prz-slot">
               <div className="prz-c">
                 <img
-                  src="/assets/prize-harmony.png"
+                  src={assetUrl('prize-harmony.png')}
                   alt="하모니 힐스"
                   style={BG_IMG_STYLE}
                 />
@@ -86,7 +88,7 @@ export function Benefits() {
             </div>
             <div className="prz-c">
               <img
-                src="/assets/prize-umbrella.png"
+                src={assetUrl('prize-umbrella.png')}
                 alt="옥스포드 우산"
                 style={BG_IMG_STYLE}
               />
@@ -99,7 +101,7 @@ export function Benefits() {
             </div>
             <div className="prz-c">
               <img
-                src="/assets/prize-dict.png"
+                src={assetUrl('prize-dict.png')}
                 alt="Oxford Picture Dictionary"
                 style={BG_IMG_STYLE}
               />
