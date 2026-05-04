@@ -983,41 +983,31 @@ html {
   scroll-snap-align: start;
   scroll-snap-stop: always;
 }
-#apply {
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
-}
 
 /* ══════════════════════════════════════
-   APPLY FORM: entrance animation
+   APPLY FORM: scroll reveal cascade
 ══════════════════════════════════════ */
-#apply .form-wrap {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 0.75s cubic-bezier(0.22,1,0.36,1), transform 0.75s cubic-bezier(0.22,1,0.36,1);
-}
-#apply.form-visible .form-wrap {
-  opacity: 1;
-  transform: none;
-}
-#apply .form-t {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s 0.15s ease, transform 0.6s 0.15s ease;
-}
-#apply.form-visible .form-t { opacity:1; transform:none; }
-#apply .form-s {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s 0.25s ease, transform 0.6s 0.25s ease;
-}
-#apply.form-visible .form-s { opacity:1; transform:none; }
+#apply .form-t,
+#apply .form-s,
 #apply .form-card {
   opacity: 0;
-  transform: translateY(30px);
+  transform: translateY(20px);
+}
+#apply .form-wrap.in .form-t {
+  opacity: 1;
+  transform: none;
+  transition: opacity 0.6s 0.15s ease, transform 0.6s 0.15s ease;
+}
+#apply .form-wrap.in .form-s {
+  opacity: 1;
+  transform: none;
+  transition: opacity 0.6s 0.25s ease, transform 0.6s 0.25s ease;
+}
+#apply .form-wrap.in .form-card {
+  opacity: 1;
+  transform: none;
   transition: opacity 0.7s 0.35s ease, transform 0.7s 0.35s ease;
 }
-#apply.form-visible .form-card { opacity:1; transform:none; }
 
 /* ══════════════════════════════════════
    NEW CHART (rc-*)

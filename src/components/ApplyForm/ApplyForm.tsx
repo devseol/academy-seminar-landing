@@ -68,7 +68,7 @@ export const ApplyForm = forwardRef<HTMLElement>(function ApplyForm(_, ref) {
         justifyContent: 'center',
       }}
     >
-      <form className="form-wrap" onSubmit={onSubmit} noValidate>
+      <form className="form-wrap sr" onSubmit={onSubmit} noValidate>
         <div className="form-t">참가 신청</div>
         <div className="form-s">
           아래 정보를 입력해 주시면 확인 연락을 드립니다.
